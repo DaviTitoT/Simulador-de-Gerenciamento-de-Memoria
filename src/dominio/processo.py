@@ -6,10 +6,8 @@ class Processo:
         return f"Processo({self.identificador})"
 
     def simular(self, entrada, fila):
-        if " " in entrada:
-            processos = entrada.split()
-        else:
-            processos = list(entrada)
+
+        processos = entrada
    
         for p in processos:
             if fila.contem(p):
