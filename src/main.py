@@ -2,11 +2,11 @@ from dominio.processo import Processo
 from dominio.fila import Fila
 
 def main():
-    
-    processo = Processo(None)  
-    tamanho = int(input("Digite o tamanho máximo da fila: "))
+
+    processo = Processo(None)
+    tamanho = int(input("Digite o tamanho máximo da moldura: "))
     fila = Fila(tamanho)
-    entrada = input("Digite os processos (ex: 1 2 3 4 5 6 ou 123456): ")
+    entrada = input("Digite os processos (ex: 1 2 33 14 2 6): ")
     processo.simular(entrada, fila)
 
 if __name__ == "__main__":

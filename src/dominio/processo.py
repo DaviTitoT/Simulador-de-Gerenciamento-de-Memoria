@@ -7,8 +7,8 @@ class Processo:
 
     def simular(self, entrada, fila):
 
-        processos = entrada
-   
+        processos = entrada.split()
+
         for p in processos:
             if fila.contem(p):
                 continue 
