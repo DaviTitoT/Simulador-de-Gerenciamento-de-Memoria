@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Fila:
     def __init__(self, tamanho_maximo):
         self.tamanho_maximo = tamanho_maximo
@@ -22,6 +23,6 @@ class Fila:
     def contem(self, identificador):
         """Verifica se um processo com o dado identificador está na fila."""
         return any(processo.identificador == identificador for processo in self.fila)
-    
+
     def __repr__(self):
         return f"Fila({list(self.fila)})"
